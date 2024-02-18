@@ -11,7 +11,7 @@
     line-height: remy(68);
     letter-spacing: remy(0.75);
     color: #fff;
-    background-color: $ac;
+    background-color: var(--ac);
 
     cursor: pointer;
     white-space: nowrap;
@@ -19,30 +19,30 @@
 }
 
 .btn:hover {
-    background-color: darken($ac, 10%);
+    background-color: var(--darkAc);
 }
 
 .btn:focus {
-    background-color: darken($ac, 10%);
-    outline: remy(9) solid $outlBg;
+    background-color: darken(var(--ac), 10%);
+    outline: remy(9) solid var(--outlBg);
 }
 
 .btn-outline {
     line-height: remy(64);
-    border: remy(2) solid $ac;
+    border: remy(2) solid var(--ac);
     background-color: #fff;
-    color: $ac;
+    color: var(--ac);
 }
 
 .btn-outline:hover {
-    border-color: darken($ac, 10%);
-    color: darken($ac, 10%);
+    border-color: var(--darkAc);
+    color: var(--darkAc);
 }
 
 .btn-outline:focus {
-    border: remy(2) solid $ac;
-    border-color: $ac;
-    color: $ac;
-    outline: remy(9) solid $outlBg;
+    border: remy(2) solid var(--ac);
+    border-color: var(--ac);
+    color: var(--ac);
+    outline: remy(9) solid var(--outlBg);
     background-color: #fff;
 }

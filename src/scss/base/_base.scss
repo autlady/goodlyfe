@@ -87,8 +87,19 @@ html {
   scroll-behavior: smooth;
 }
 
-// font-family: 'Inter', sans-serif;
-// font-family: 'Montserrat', sans-serif;
+body {
+  --ac: #E43071;
+  --subAc: #FFC1D8;
+  --outlBg: #FFDAE7;
+  --darkAc: #BE285E;
+}
+
+body.green-theme {
+  --ac: #26D68A;
+  --subAc: #9BE8C7;
+  --outlBg: #a1e7c9;
+  --darkAc: #0b9056;
+}
 
 html,
 body {
@@ -96,6 +107,7 @@ body {
   font-family: "Poppins", sans-serif;
   padding: 0;
   width: 100%;
+  background-color: #fff;
 
   -webkit-font-smoothing: antialiased;
 }
