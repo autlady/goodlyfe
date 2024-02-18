@@ -1,50 +1,75 @@
 @font-face {
-  font-family: 'Calibri';
-  src: local('Calibri Light Italic'), local('Calibri-LightItalic'),
-    url('../fonts/Calibri-LightItalic.woff2') format('woff2');
-  font-weight: 300;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Calibri';
-  src: local('Calibri Bold'), local('Calibri-Bold'),
-    url('../fonts/Calibri-Bold.woff2') format('woff2');
-  font-weight: bold;
+  font-family: 'Manrope';
+  src: local('Manrope Semibold'), local('Manrope-Semibold'),
+      url('../fonts/Manrope-Semibold.woff2') format('woff2');
+  font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Calibri';
-  src: local('Calibri'),
-    url('../fonts/Calibri.woff2') format('woff2');
+  font-family: 'Manrope';
+  src: local('Manrope Regular'), local('Manrope-Regular'),
+      url('./fonts/Manrope-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: local('Montserrat Regular'), local('Montserrat-Regular'),
-    url('../fonts/Montserrat-Regular.woff2') format('woff2');
-  font-weight: normal;
+  font-family: 'Manrope';
+  src: local('Manrope Medium'), local('Manrope-Medium'),
+      url('Manrope-Medium.woff2') format('woff2');
+  font-weight: 500;
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'Montserrat';
-  src: local('Montserrat Bold'), local('Montserrat-Bold'),
-    url('../fonts/Montserrat-Bold.woff2') format('woff2');
-  font-weight: bold;
-  font-style: normal;
-}
 
-@font-face {
-  font-family: 'Inter';
-  src: local('Inter Regular'), local('Inter-Regular'),
-    url('../fonts/Inter-Regular.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
+// @font-face {
+//   font-family: 'Calibri';
+//   src: local('Calibri Light Italic'), local('Calibri-LightItalic'),
+//     url('../fonts/Calibri-LightItalic.woff2') format('woff2');
+//   font-weight: 300;
+//   font-style: italic;
+// }
+
+// @font-face {
+//   font-family: 'Calibri';
+//   src: local('Calibri Bold'), local('Calibri-Bold'),
+//     url('../fonts/Calibri-Bold.woff2') format('woff2');
+//   font-weight: bold;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: 'Calibri';
+//   src: local('Calibri'),
+//     url('../fonts/Calibri.woff2') format('woff2');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: 'Montserrat';
+//   src: local('Montserrat Regular'), local('Montserrat-Regular'),
+//     url('../fonts/Montserrat-Regular.woff2') format('woff2');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: 'Montserrat';
+//   src: local('Montserrat Bold'), local('Montserrat-Bold'),
+//     url('../fonts/Montserrat-Bold.woff2') format('woff2');
+//   font-weight: bold;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: 'Inter';
+//   src: local('Inter Regular'), local('Inter-Regular'),
+//     url('../fonts/Inter-Regular.woff2') format('woff2');
+//   font-weight: normal;
+//   font-style: normal;
+// }
 
 * {
   box-sizing: border-box;
@@ -145,8 +170,14 @@ select:-webkit-autofill:focus {
 }
 
 .container {
-  width: var(--container-width);
+  max-width: var(--container-width);
   margin: 0 auto;
+  padding: 0 15px;
+}
+
+.containerXL {
+  width: 100%;
+  max-width: 1530px;
 }
 
 .h1 {
@@ -157,9 +188,37 @@ select:-webkit-autofill:focus {
 }
 
 .h2 {
+  position: relative;
   font-family: "Montserrat", sans-serif;
   font-size: 36px;
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
+  text-align: center;
 }
+
+.h2:after {
+  content: attr(data-title);
+  text-transform: uppercase;
+  white-space: nowrap;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 82px;
+  color: rgba(0, 0, 0, 0.05);
+  z-index: -1;
+}
+
+.h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
+  text-align: end;
+}
+
