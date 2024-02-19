@@ -12,4 +12,12 @@
         }
 
     }
+
+    @media (max-width: remy(1439)) {
+        column-gap: 2.5rem;
+    }
+
+    @media (max-width: remy(1199)) {
+        column-gap: 1.5rem;
+    }
 }

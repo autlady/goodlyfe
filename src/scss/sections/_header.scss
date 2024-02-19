@@ -14,6 +14,15 @@
     &__btn {
         column-gap: remy(40);
         margin-left: remy(73);
+
+        @media (max-width: remy(1439)) {
+            margin-left: 2.5rem;
+        }
+
+        @media (max-width: remy(1199)) {
+            margin-left: 1.5rem;
+            column-gap: 1.5rem;
+        }
     }
 }
 
@@ -26,6 +35,10 @@
 
     span {
         color: var(--subAc);
+    }
+
+    @media (max-width: remy(1199)) {
+        font-size: remy(32);
     }
 }
 
