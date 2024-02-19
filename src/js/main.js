@@ -1,32 +1,12 @@
-// const toggleMenu = document.querySelector('menu-toggle');
+document.addEventListener("DOMContentLoaded", function () {
 
-// if (toggleMenu){
-//     toggleMenu.addEventListener('click', function(){
-        
-//         if(this.classList.contains('active')){
-//             this.classList.remove('active');
-//         }else{
-//             this.classList.add('active');
-//         }
-//     })
-// }
+  
 
+  /* ===== отобразить форму поиска по клику на лупу в шапке =====*/
+  const headerSearchOpen = document.querySelector('#search-open');
+  const headerSearchForm = document.querySelector('#header-search-form');
 
-
-const swiper = new Swiper('#products-slider', {
-
-  slidesPerView: 3,
-  spaceBetween: 32,
-  loop: true,
-
-  pagination: {
-    el: '#products-slider-pagination',
-  },
-
-  navigation: {
-    nextEl: '#btn-next',
-    prevEl: '#btn-prev',
-  },
-});
-
-
+  headerSearchOpen.addEventListener('click', () => {
+    headerSearchForm.classList.toggle('visible');
+  })
+})

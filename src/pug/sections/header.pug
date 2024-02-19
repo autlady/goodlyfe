@@ -15,7 +15,7 @@ header.header
     
          .header-nav__btn.d-flex
             // ===== button-search =====
-            button.search-open.d-flex 
+            button.search-open.d-flex#search-open 
                span Search 
                svg.svg-search 
                   use(href="./img/sprite/solid.svg#magnifying-glass")
@@ -24,16 +24,16 @@ header.header
             button.btn-outline.btn-outline--slim Login
 
    //===== header-search =====
-   .header-search-wrapper
+   .header-search-wrapper#header-search-form
       .header-container
          form.search-form
             .form-item
-               input(type="text" placeholder="search")
+               input(type="text" placeholder="search...")
                button(type="submit").search-button
                   svg.svg-search 
                      use(href="./img/sprite/solid.svg#magnifying-glass")
 
-               button(type="reset").reset-button
+               button(type="reset").reset-btn
                   svg.svg-xmark 
                      use(href="./img/sprite/solid.svg#xmark")
 

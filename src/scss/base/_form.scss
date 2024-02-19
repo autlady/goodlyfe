@@ -5,9 +5,18 @@
     input {
         width: 100%;
         display: block;
+        font-size: 1rem;
         height: remy(50);
         border: remy(1) solid $sec3;
         border-radius: remy(5);
+        padding-left: remy(50);
+        padding-right: remy(50);
+        color: $sec1;
+    }
+
+    input::placeholder {
+        font-size: 1rem;
+        color: $sec3;
     }
 }
 
@@ -18,16 +27,23 @@
         width: 100%;
     }
 
-    .search-btn {
+    .search-btn, .reset-btn {
         position: absolute;
-        left: 0;
         top: 50%;
         transform: translateY(-50%);
+        z-index: 2;
+    }
 
+    .search-btn {
+        left: 0;
         .svg-search {
-            width: remy(45);
-            height: remy(45);
+            width: remy(35);
+            height: remy(35);
             fill: var(--ac);
         }
+    }
+
+    .reset-btn {
+        right: 0;
     }
 }

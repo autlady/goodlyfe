@@ -8,6 +8,8 @@
 .header-nav {
     height: 101px;
     background-color: var(--ac);
+    position: relative;
+    z-index: 3;
     
     &__btn {
         column-gap: remy(40);
