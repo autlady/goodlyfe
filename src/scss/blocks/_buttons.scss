@@ -56,10 +56,19 @@
     background-color: #fff;
 }
 
+.btn-outline.btn-outline--slim:focus {
+    outline: remy(5) solid var(--outlBg);
+}
+
 .search-open {
     height: remy(50);
     display: flex;
     column-gap: remy(6);
     align-items: center;
     color: #fff;
+    transition: .3s;
+
+    &:hover {
+        opacity: .7;
+    }
 }

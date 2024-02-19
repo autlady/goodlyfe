@@ -1,18 +1,17 @@
-.header-nav {
-    padding-top: remy(25);
-    padding-bottom: remy(25);
-    background-color: var(--ac);
+.header-container {
+    width: 100%;
+    max-width: remy(1390);
+    padding-inline: remy(15);
+    margin: 0 auto;
+}
 
-    &__content {
-        width: 100%;
-        max-width: remy(1390);
-        padding-inline: remy(15);
-        margin: 0 auto;
-        justify-content: space-between;
-    }
+.header-nav {
+    height: 101px;
+    background-color: var(--ac);
     
     &__btn {
         column-gap: remy(40);
+        margin-left: remy(73);
     }
 
 
@@ -23,6 +22,7 @@
     font-weight: 800;
     line-height: 1.095;
     color: #fff;
+    margin-right: auto;
 
     span {
         color: var(--subAc);
