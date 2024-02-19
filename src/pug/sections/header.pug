@@ -24,7 +24,19 @@ header.header
             button.btn-outline.btn-outline--slim Login
 
    //===== header-search =====
-   .header-search-wrapper 
+   .header-search-wrapper
+      .header-container
+         form.search-form
+            .form-item
+               input(type="text" placeholder="search")
+               button(type="submit").search-button
+                  svg.svg-search 
+                     use(href="./img/sprite/solid.svg#magnifying-glass")
+
+               button(type="reset").reset-button
+                  svg.svg-xmark 
+                     use(href="./img/sprite/solid.svg#xmark")
+
 
    //===== slider =====
    .header-slider

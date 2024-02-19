@@ -1,0 +1,33 @@
+.form-item {
+    position: relative;
+
+
+    input {
+        width: 100%;
+        display: block;
+        height: remy(50);
+        border: remy(1) solid $sec3;
+        border-radius: remy(5);
+    }
+}
+
+.search-form {
+    width: 100%;
+    column-gap: remy(70);
+    .form-item {
+        width: 100%;
+    }
+
+    .search-btn {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+
+        .svg-search {
+            width: remy(45);
+            height: remy(45);
+            fill: var(--ac);
+        }
+    }
+}

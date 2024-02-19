@@ -17,6 +17,7 @@
     cursor: pointer;
     white-space: nowrap;
     transition: 0.3s;
+    flex-shrink: 0;
 }
 
 .btn:hover {
