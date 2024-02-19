@@ -1,0 +1,26 @@
+.header-nav {
+    padding-top: remy(25);
+    padding-bottom: remy(25);
+    background-color: var(--ac);
+
+    &__content {
+        width: 100%;
+        max-width: remy(1390);
+        padding-inline: remy(15);
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+    
+    &__btn {
+        column-gap: remy(40);
+}
+}
+
+
+
+  
+
+
+
+
+

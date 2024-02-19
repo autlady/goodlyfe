@@ -23,7 +23,7 @@
 }
 
 .btn:focus {
-    background-color: darken(var(--ac), 10%);
+    background-color: var(--darkAc);
     outline: remy(9) solid var(--outlBg);
 }
 
@@ -45,4 +45,12 @@
     color: var(--ac);
     outline: remy(9) solid var(--outlBg);
     background-color: #fff;
+}
+
+.search-open {
+    height: remy(50);
+    display: flex;
+    column-gap: remy(6);
+    align-items: center;
+    color: #fff;
 }
