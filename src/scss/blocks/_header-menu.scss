@@ -22,20 +22,15 @@
     }
 
     @media (max-width: remy(991)) {
+        width: remy(320);
+        height: 100%;
+        margin-left: auto;
         
-        position: fixed;
-        z-index: 10;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        transform: translateX(110%);
-        transition: 0.3s;
 
-        background-color: var(--ac);
         flex-direction: column;
         padding-block: remy(40);
         row-gap: remy(12);
+        background-color: var(--ac);
 
         a {
             font-size: remy(20);
@@ -43,7 +38,21 @@
     }
 }
 
-.header-menu.active {
+#header-menu {
+    @media (max-width: remy(991)) { 
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transform: translateX(110%);
+        transition: 0.3s; 
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+}
+
+#header-menu.active {
    
     transform: translateX(0);
 }
