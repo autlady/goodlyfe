@@ -20,4 +20,30 @@
     @media (max-width: remy(1199)) {
         column-gap: 1.5rem;
     }
+
+    @media (max-width: remy(991)) {
+        
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transform: translateX(110%);
+        transition: 0.3s;
+
+        background-color: var(--ac);
+        flex-direction: column;
+        padding-block: remy(40);
+        row-gap: remy(12);
+
+        a {
+            font-size: remy(20);
+        }
+    }
+}
+
+.header-menu.active {
+   
+    transform: translateX(0);
 }

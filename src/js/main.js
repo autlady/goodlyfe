@@ -8,7 +8,8 @@ document.addEventListener("DOMContentLoaded", function () {
     headerSearchForm.classList.toggle('visible');
   });
   
-  const toggleMenu = document.querySelectorAll('.menu-toggle');
+  const toggleMenu = document.querySelector('.menu-toggle');
+  const mobileMenu = document.querySelector('#header-menu');
   const bodyEl = document.body;
   
   if (toggleMenu) {
@@ -16,12 +17,12 @@ document.addEventListener("DOMContentLoaded", function () {
          
           if(this.classList.contains('active')){
               this.classList.remove('active');
-              // asideMenu.classList.remove('active');
-              // bodyEl.classList.remove('noscroll');
+              mobileMenu.classList.remove('active');
+              bodyEl.classList.remove('noscroll');
           }else{
               this.classList.add('active');
-              // asideMenu.classList.add('active');
-              // bodyEl.classList.add('noscroll');
+              mobileMenu.classList.add('active');
+              bodyEl.classList.add('noscroll');
           }
       });
   };

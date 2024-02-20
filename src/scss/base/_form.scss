@@ -9,8 +9,7 @@
         height: remy(50);
         border: remy(1) solid $sec3;
         border-radius: remy(5);
-        padding-left: remy(50);
-        padding-right: remy(50);
+        padding-inline: remy(40);
         color: $sec1;
     }
 
@@ -35,15 +34,15 @@
     }
 
     .search-btn {
-        left: 0;
+        left: remy(8);
         .svg-search {
-            width: remy(35);
-            height: remy(35);
+            width: remy(25);
+            height: remy(25);
             fill: var(--ac);
         }
     }
 
     .reset-btn {
-        right: 0;
+        right: remy(8);
     }
 }

@@ -1,3 +1,7 @@
+.header {
+    position: relative;
+}
+
 .header-container {
     width: 100%;
     max-width: remy(1390);
@@ -10,7 +14,7 @@
     background-color: var(--ac);
     position: relative;
     z-index: 3;
-    
+
     &__btn {
         column-gap: remy(40);
         margin-left: remy(73);
@@ -23,6 +27,16 @@
             margin-left: 1.5rem;
             column-gap: 1.5rem;
         }
+
+        @media (max-width: remy(991)) {
+            .btn-outline {
+                display: none;
+            }
+        }
+    }
+
+    @media (max-width: remy(991)) {
+        height: remy(64);
     }
 }
 
@@ -39,6 +53,10 @@
 
     @media (max-width: remy(1199)) {
         font-size: remy(32);
+    }
+
+    @media (max-width: remy(574)) {
+        font-size: remy(22);
     }
 }
 

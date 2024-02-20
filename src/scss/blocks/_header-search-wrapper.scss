@@ -1,16 +1,23 @@
 .header-search-wrapper {
     position: absolute;
-    top: 0;
+    top: remy(-20);
     left: 0;
     right: 0;
-    height: 100px;
-    padding-block: remy(30);
+    padding-block: remy(24);
     box-shadow: 0 7px 15px rgba(0, 0, 0, .1);
     background-color: #fff;
     transition: .3s;
 
     &.visible {
-        top: remy(110);
+        top: remy(101);
         z-index: 2;
+    }
+
+    @media (max-width: remy(991)) {
+        padding-block: remy(16);
+
+        &.visible {
+            top: remy(64);
+        }
     }
 }

@@ -72,4 +72,11 @@
     &:hover {
         opacity: .7;
     }
+
+    @media (max-width: remy(574)) {
+        span {
+            display: none;
+        }
+
+    }
 }
