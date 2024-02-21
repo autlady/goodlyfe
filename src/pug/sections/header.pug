@@ -43,15 +43,15 @@ header.header
                   svg.svg-xmark 
                      use(href="./img/sprite/solid.svg#xmark")
 
-
    //===== slider =====
    .header-content
+      //===== headerSwiper =====
       .swiper.header-slider 
          .swiper-wrapper
-            .swiper-slide Slide 1
-            .swiper-slide Slide 2 
-            .swiper-slide Slide 3
-            .swiper-slide Slide 4
+            +header-slide("header-slide1")
+            +header-slide("header-slide2")
+            +header-slide("header-slide3")
+            +header-slide("header-slide4")
          .swiper-pagination  
 
   

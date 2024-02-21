@@ -38,19 +38,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
   /* header slider */
 
-  const swiper = new Swiper('.mySwiper', {
+  const headerSwiper = new Swiper('.header-slider', {
     // Optional parameters
-    slidesPerView: 1,
-    spaceBetween: 20,
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.program-slider-next',
-      prevEl: '.program-slider-prev',
-    },
+    loop: true,
+    speed: 1000,
+    effect: "fade",
+    lazy: true,
   
       pagination: {
       el: '.swiper-pagination',
+      clickable: true,
     },
   });
 
