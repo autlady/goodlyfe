@@ -25,7 +25,8 @@
         width: remy(320);
         height: 100%;
         margin-left: auto;
-        
+        transform: translateX(110%);
+        transition: 0.3s;
 
         flex-direction: column;
         padding-block: remy(40);
@@ -39,20 +40,47 @@
 }
 
 #header-menu {
-    @media (max-width: remy(991)) { 
+    @media (max-width: remy(991)) {
+        display: none;
         position: fixed;
         z-index: 10;
         top: 0;
         right: 0;
         bottom: 0;
         left: 0;
-        transform: translateX(110%);
-        transition: 0.3s; 
         background-color: rgba(255, 255, 255, 0.7);
     }
 }
 
 #header-menu.active {
-   
-    transform: translateX(0);
+    display: block;
+    animation-name: opacity;
+    animation-duration: .3s;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+
+    .header-menu {
+        animation-name: move;
+        animation-duration: .3s;
+        animation-delay: .5s;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes move {
+    from {
+        transform: translateX(110%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

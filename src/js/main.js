@@ -13,6 +13,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const bodyEl = document.body;
   
   if (toggleMenu) {
+
+    /* клик по иконке гамбургер */
     toggleMenu.addEventListener('click', function(){
          
           if(this.classList.contains('active')){
@@ -25,9 +27,31 @@ document.addEventListener("DOMContentLoaded", function () {
               bodyEl.classList.add('noscroll');
           }
       });
+
+    /* клик по моб меню */
+    mobileMenu.addEventListener('click', ()=> {
+      toggleMenu.classList.remove('active');
+      mobileMenu.classList.remove('active');
+      bodyEl.classList.remove('noscroll');
+    })
   };
 
+  /* header slider */
 
-
+  const swiper = new Swiper('.mySwiper', {
+    // Optional parameters
+    slidesPerView: 1,
+    spaceBetween: 20,
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.program-slider-next',
+      prevEl: '.program-slider-prev',
+    },
+  
+      pagination: {
+      el: '.swiper-pagination',
+    },
+  });
 
 })
