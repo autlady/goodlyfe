@@ -194,6 +194,10 @@ select:-webkit-autofill:focus {
   padding: 0 15px;
 }
 
+.accent-span {
+  color: var(--subAc)!important;
+}
+
 .d-flex {
   display: flex;
   align-items: center;

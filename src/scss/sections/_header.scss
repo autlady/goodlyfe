@@ -13,7 +13,7 @@
     height: 101px;
     background-color: var(--ac);
     position: relative;
-    z-index: 3;
+    z-index: 5;
 
     &__btn {
         column-gap: remy(40);
@@ -47,9 +47,7 @@
     color: #fff;
     margin-right: auto;
 
-    span {
-        color: var(--subAc);
-    }
+
 
     @media (max-width: remy(1199)) {
         font-size: remy(32);
