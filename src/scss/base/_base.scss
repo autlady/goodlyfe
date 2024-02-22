@@ -190,12 +190,19 @@ select:-webkit-autofill:focus {
 }
 
 .container {
-  max-width: var(--container-width);
+  max-width: remy(1260);
+  width: 100%;
   margin: 0 auto;
-  padding: 0 15px;
+  padding-inline: remy(50);
+
+  @media (max-width: remy(1199)) {
+    padding-inline: remy(30);
+  }
+
+  @media (max-width: remy(767)) {
+    padding-inline: remy(16);
+  }
 }
-
-
 
 .d-flex {
   display: flex;

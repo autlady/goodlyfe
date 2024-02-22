@@ -16,6 +16,7 @@
 
 .h4 {
     font-size: remy(40);
+    line-height: 1.5;
 }
 
 .h5 {
@@ -24,7 +25,11 @@
 
 .accent-span {
     color: var(--subAc)!important;
-  }
+}
+
+.txt-accent {
+    color: var(--ac)!important;
+}
 
 @media (max-width: remy(1199)) {
     .h1 {
@@ -35,5 +40,9 @@
 @media (max-width: remy(767)) {
     .h1 {
         font-size: remy(32);
+    }
+
+    .h4 {
+        line-height: 1.2;
     }
 }
