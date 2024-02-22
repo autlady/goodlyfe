@@ -5,15 +5,13 @@
     height: remy(68);
     border-radius: remy(34);
     text-align: center;
+    background-color: var(--ac);
 
-    font-family: inherit;
     font-size: 1rem;
     font-weight: 600;
     line-height: remy(68);
-    letter-spacing: remy(0.75);
     color: #fff;
-    background-color: var(--ac);
-
+   
     cursor: pointer;
     white-space: nowrap;
     transition: 0.3s;

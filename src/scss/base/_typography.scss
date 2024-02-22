@@ -22,6 +22,10 @@
     font-size: remy(38);
 }
 
+.accent-span {
+    color: var(--subAc)!important;
+  }
+
 @media (max-width: remy(1199)) {
     .h1 {
         font-size: remy(54);

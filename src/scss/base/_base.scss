@@ -156,6 +156,7 @@ button,
 button:focus,
 input:focus {
   outline: none;
+  font-family: inherit;
 }
 
 button {
@@ -194,9 +195,7 @@ select:-webkit-autofill:focus {
   padding: 0 15px;
 }
 
-.accent-span {
-  color: var(--subAc)!important;
-}
+
 
 .d-flex {
   display: flex;
