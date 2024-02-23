@@ -35,6 +35,12 @@
         width: 15ch;
     }
 
+    .btn {
+        font-family: 'Open Sans';
+        font-weight: 600;
+        width: fit-content;
+    }
+
     @media (max-width: remy(767)) {
         top: 43%;
         .btn {
