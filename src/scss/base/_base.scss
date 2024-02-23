@@ -204,18 +204,6 @@ select:-webkit-autofill:focus {
   }
 }
 
-*.section-pb {
-  padding-block: remy(64) remy(71);
-  
-  @media (max-width: remy(991)) {
-    padding-block: remy(50) remy(60);
-  }
-
-  @media (max-width: remy(767)) {
-    padding-block: remy(35) remy(23);
-  }
-}
-
 .d-flex {
   display: flex;
   align-items: center;
