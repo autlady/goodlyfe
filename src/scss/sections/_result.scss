@@ -3,16 +3,24 @@
     &-content {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         column-gap: remy(30);
     }
 
     &__img {
         flex-shrink: 0;
+        display: flex;
+    }
+
+    &__img-bottom {
+        padding-top: remy(144);
+        margin-left: remy(-144);
     }
 
     &__desc {
         flex-grow: 1;
         max-width: remy(540);
+        padding-bottom: remy(23);
     }
 
     .h4 {
