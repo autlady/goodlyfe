@@ -1,0 +1,13 @@
+mixin stories-card(title, text, img, name)
+    //==== single card ===== 
+    .stories-card
+        h3.h5 #{title}Kg lost!
+        .stories-card__text
+            span &#10075;&#10075; 
+            p #{text}
+        .stories-card__footer
+            .stories-card__img 
+                img(src="./img/avatar/"+ img +".webp", width="59" height="57" alt="avatar")
+            .stories-card__name 
+                p #{name}
+                span Mother of two

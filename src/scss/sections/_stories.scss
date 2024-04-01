@@ -1,0 +1,102 @@
+.stories {
+    padding-top: remy(130);
+    padding-bottom: remy(80);
+    background: linear-gradient(to top, #f4e3e9 0%, rgba(255, 255, 255, 1) 100%);
+
+    &-container {
+        width: remy(955);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &-title {
+        margin-bottom: remy(30);
+
+        .h3 {
+            line-height: 1.19;
+            margin-bottom: remy(12);
+        }
+        
+        p {
+            font-size: remy(18);
+        }
+    }
+}
+
+.stories-cards-wrapper {
+    display: flex;
+    align-items: flex-start;
+    padding-left: remy(97);
+}
+
+.stories-card {
+    width: remy(349);
+    flex-shrink: 0;
+    box-shadow: 1px 4px 8px 0 rgba(0, 0, 0, 0.18);
+    background: #fff;
+    background-repeat: remy(10);
+    padding: remy(35) remy(32) remy(38) remy(27);
+
+    .h5 {
+        margin-bottom: remy(29);
+        color: var(--ac);
+    }
+
+    &__text {
+        padding-left: remy(37);
+        font-size: remy(18);
+        line-height: 1.78;
+        margin-bottom: remy(16);
+        position: relative;
+
+        span {
+            position: absolute;
+            left: -5px;
+            top: 0;
+            font-family:'Times New Roman';
+            font-size: remy(58);
+            line-height: 1;
+            color: var(--decorColor);
+        }
+    }
+
+    &__footer {
+        display: flex;
+        align-items: flex-end;
+        column-gap: remy(17);
+        padding-left: remy(39);
+    }
+
+    &__img {
+        flex-shrink: 0;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    &__name {
+        p {
+            font-weight: 600;
+            font-size: remy(18);
+        }
+        span {
+            display: block;
+            color: #969bab;
+            font-size: remy(14);
+        }
+    }
+}
+
+.stories-card:nth-child(2) {
+    width: remy(449);
+    padding-top: remy(46);
+    padding-left: remy(34);
+
+    .h5 {
+        margin-bottom: remy(20);
+    }
+
+    .stories-card__text {
+        padding-left: remy(32);
+        padding-bottom: remy(10);
+    }
+}
