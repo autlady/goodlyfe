@@ -42,7 +42,19 @@
         font-size: remy(32);
     }
 
+    .h2 {
+        font-size: remy(42);
+    }
+
+    .h3 {
+        font-size: remy(26);
+    }
+
     .h4 {
         line-height: 1.2;
+    }
+    
+    .subtitle {
+        font-size: remy(16);
     }
 }
