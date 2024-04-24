@@ -3,3 +3,24 @@
     height: 500px;
     position: relative;
 }
+
+.social__links {
+    display: flex;
+    gap: remy(90);
+}
+
+.social__links-item {
+    width: remy(110);
+    height: remy(110);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: background-color 0.2s ease-in;
+
+    &:hover {
+        background-color: var(--outlBg);
+    }
+}
