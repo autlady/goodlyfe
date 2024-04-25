@@ -1,0 +1,42 @@
+.footer {
+    // background-color: #0b0d17;
+}
+
+.footer__text {
+    font-family: 'Manrope';
+    font-size: remy(14);
+    line-height: 1.71;
+
+}
+
+.footer__socials {
+    display: flex;
+    gap: remy(16);
+
+    @media (max-width: remy(767)) {
+        padding-top: remy(15);
+        gap: remy(27);
+    }
+}
+
+.footer__socials-item {
+    width: remy(24);
+    height: remy(24);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background-color: grey;
+    border-radius: 50%;
+    color: #fff;
+
+    &:hover {
+        color: var(--subAc);
+    }
+}
+
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+}
