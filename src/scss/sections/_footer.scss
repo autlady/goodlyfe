@@ -1,12 +1,23 @@
 .footer {
-    // background-color: #0b0d17;
+    padding-top: remy(96);
+    padding-bottom: remy(24);
+    background-color: #0b0d17;
+    color: #fff;
+}
+
+.footer-row {
+    margin-bottom: remy(90);
+    display: flex;
+    gap: remy(40);
+    // justify-content: space-between;
+ 
 }
 
 .footer__text {
+    margin-bottom: remy(24);
     font-family: 'Manrope';
     font-size: remy(14);
     line-height: 1.71;
-
 }
 
 .footer__socials {
@@ -33,6 +44,18 @@
     &:hover {
         color: var(--subAc);
     }
+}
+
+.footer-content {
+    max-width: remy(255);
+   
+}
+
+.footer-group {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+  
 }
 
 
