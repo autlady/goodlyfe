@@ -15,6 +15,7 @@
 
 .footer__text {
     margin-bottom: remy(24);
+    margin-top: remy(24);
     font-family: 'Manrope';
     font-size: remy(14);
     line-height: 1.71;
@@ -42,7 +43,7 @@
     color: #fff;
 
     &:hover {
-        color: var(--subAc);
+        color: var(--ac);
     }
 }
 
@@ -58,8 +59,53 @@
   
 }
 
+.footer-nav__title {
+    margin-bottom: remy(24);
+    font-family: 'Manrope';
+    font-size: remy(20);
+    line-height: 1.5;
+    font-weight: 500;
+
+}
+
+.footer a {
+    font-size: remy(14);
+    line-height: 1.71;
+    color: #d9dbe1;
+
+    transition: all 0.3s ease-in;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
 
 .footer-bottom {
     display: flex;
     justify-content: space-between;
+}
+
+.footer__menu {
+    display: flex;
+}
+
+.footer__menu-item:not(:last-child) {
+    margin-bottom: remy(12);
+}
+
+.footer__menu-item a {
+    font-size: remy(14);
+    line-height: 1.71;
+    color: #d9dbe1;
+    transition: all 0.3s ease-in;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.footer__menu-item:not(:last-child) {
+    margin-right: remy(20);
+
 }
