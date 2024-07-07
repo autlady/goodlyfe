@@ -3,72 +3,45 @@ footer.footer
         //====== footer-top ======
         .footer-row
             .footer-content 
-                a(href="#!").logo.logo--footer Good#[span.txt-accent lyfe]
-                p.footer__text Lorem ipsum dolor amet, consectetur adipiscing elit. Eget nisl nunc quam ac sed turpis volutpat. Cursus sed massa non nisi, placerat.
-                .footer__socials
-                    a(href="#!").footer__socials-item
-                        svg.svg-insta 
-                            use(href="./img/spriteSvg.svg#svg-insta")
-                    a(href="#!").footer__socials-item
-                        svg.svg-ball 
-                            use(href="./img/spriteSvg.svg#svg-ball")
-                    a(href="#!").footer__socials-item
-                        svg.svg-twitter 
-                            use(href="./img/spriteSvg.svg#svg-twitter")
-                    a(href="#!").footer__socials-item
-                        svg.svg-youtube 
-                            use(href="./img/spriteSvg.svg#svg-youtube")
-            .footer-group 
-                .footer-nav
-                    .footer-nav__title Quick Links
-                    ul.footer-nav__list
-                        li 
-                            a(href="#!") Classes
-                        li 
-                            a(href="#!") Timetable
-                        li 
-                            a(href="#!") Clubs
-                        li 
-                            a(href="#!") Nutrition 
-                        li 
-                            a(href="#!") Free Trial
-                .footer-nav
-                    .footer-nav__title Guides
-                    ul.footer-nav__list
-                        li 
-                            a(href="#!") Weight Loss
-                        li 
-                            a(href="#!") Strength Gain
-                        li 
-                            a(href="#!") Crossfit
-                        li 
-                            a(href="#!") Washbaord Abs 
-                        li 
-                            a(href="#!") Dieting
-                .footer-nav
-                    .footer-nav__title Reach us
-                    ul.footer-nav__contacts
-                        li 
-                            img(src="./img/Iconly/Bold/Message.webp", width="24", height="24", alt="icon")
-                            a(href="mailto:admin@goodlyfe.co") admin@goodlyfe.co
-                        li 
-                            img(src="./img/Iconly/Bold/Calling.webp", width="24", height="24", alt="icon")
-                            a(href="tel:+889876543210") +88 98765 43210
-                        li
-                            img(src="./img/Iconly/Bold/Location.webp", width="24", height="24", alt="icon") 
-                            a(href="#!") 90210 Beverly Hills California USA
+                a(href="#!").logo.logo--footer.mb-24 Good#[span.txt-accent lyfe]
+                .footer__text.mb-24 
+                    p Lorem ipsum dolor amet, consectetur adipiscing elit. Eget nisl nunc quam ac sed turpis volutpat. Cursus sed massa non nisi, placerat.
+                .footer-social
+                    +social-item('instagram')
+                    +social-item('dribbble')
+                    +social-item('twitter')
+                    +social-item('youtube', '13', '10')
+            +footer-nav('Quick Links', 'Classes', 'Timetable', 'Clubs', 'Nutrition', 'Free Trial')
+            +footer-nav('Guides', 'Weight Loss', 'Strength Gain', 'Crossfit', ' Washbaord Abs', 'Dieting')
+
+            .footer-nav
+                h4.footer-nav__title Reach us
+                ul.footer-nav__contacts
+                    li
+                        a(href="mailto:admin@goodlyfe.co")
+                            svg(width="20" height="20")
+                                use(href="./img/sprite/solid.svg#envelope")
+                            span admin@goodlyfe.co
+                    li
+                        a(href="tel:+889876543210")
+                            svg(width="20" height="20")
+                                use(href="./img/sprite/solid.svg#phone-volume")
+                            span +88 98765 43210
+                    li
+                        a(href="tel:+889876543210")
+                            svg(width="20" height="20")
+                                use(href="./img/sprite/solid.svg#location-dot")
+                            span 90210 Beverly Hills #[br] California USA
 
         //====== footer-bottom ======
         .footer-bottom 
-            p.footer__copyright &copy; 2024 GoodLyfe. All rights reserved
-            ul.footer__menu 
-                li.footer__menu-item
+            .footer__text
+                p &copy; 2024 GoodLyfe. All rights reserved
+            .footer__menu
+                nav  
                     a(href="#!") Terms & Conditions
-                li.footer__menu-item
                     a(href="#!") Privacy Policy
-                li.footer__menu-item
                     a(href="#!") Sitemap
-                li.footer__menu-item
                     a(href="#!") Disclaimer
 
 

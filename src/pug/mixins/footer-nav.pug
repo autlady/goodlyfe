@@ -1,0 +1,8 @@
+mixin footer-nav(menuTitle, ...menuLinks)
+    //==== footer-nav ======
+    .footer-nav
+        h4.footer-nav__title #{menuTitle}
+        ul.footer-nav__list
+            each item in menuLinks
+                li 
+                    a(href="#!") #{item}

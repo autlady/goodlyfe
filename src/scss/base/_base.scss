@@ -110,6 +110,7 @@ body {
   padding: 0;
   width: 100%;
   background-color: #fff;
+  color: $sec1;
 
   -webkit-font-smoothing: antialiased;
 }
@@ -121,6 +122,11 @@ body {
   height: 100vh;
 }
 
+a {
+  display: inline-block;
+  color: inherit;
+  font-size: inherit;
+}
 
 a,
 a:hover {
