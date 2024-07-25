@@ -7,6 +7,7 @@
     line-height: 1.71;
 
     @media (max-width: remy(767)) {
+        padding-top: remy(40);
         .container {
             width: remy(255);
             padding: 0;
@@ -35,6 +36,10 @@
 
 .footer-content {
     width: remy(255);
+
+    @media (max-width: remy(767)) {
+        margin-bottom: remy(43);
+    }
 }
 
 .footer-social {
@@ -74,6 +79,12 @@
 
 .footer-nav {
     width: remy(255);
+}
+
+.footer-nav:not(:last-child) {
+    @media (max-width: remy(767)) {
+        margin-bottom: remy(43);
+    }
 }
 
 .footer-nav__title {
@@ -156,6 +167,8 @@
     }
 
     @media (max-width: remy(767)) {
+        text-align: center;
+
         a {
             margin-top: remy(10);
         }
