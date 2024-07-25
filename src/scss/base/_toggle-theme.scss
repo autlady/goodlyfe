@@ -1,0 +1,12 @@
+.toggle-theme {
+    position: fixed;
+    top: remy(100);
+    right: remy(40);
+    z-index: 5;
+    display: inline-block;
+    width: remy(50);
+    height: remy(20);
+    border: 1px solid $sec2;
+    border-radius: remy(15);
+    background-color: $sec3;
+}
