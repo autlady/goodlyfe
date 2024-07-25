@@ -48,9 +48,35 @@
     }
 }
 
-.social__links-item img {
-    @media (max-width: remy(767)) {
-        width: auto;
-        height: remy(20);
-    }
-}
+.social__links-item svg {
+    width: 1.875rem;
+    height: 1.875rem;
+    color: var(--ac);
+    fill: var(--ac);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  .social__links-item:hover {
+    background-color: var(--ac);
+  }
+  
+  .social__links-item:hover svg {
+    color: white;
+    fill: white;
+  }
+  
+  .svg-facebook {
+    width: 0.9375rem;
+  }
+  
+  .svg-youtube {
+    width: 1.5625rem;
+  }
+
+// .social__links-item img {
+//     @media (max-width: remy(767)) {
+//         width: auto;
+//         height: remy(20);
+//     }
+// }

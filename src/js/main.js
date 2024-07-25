@@ -51,4 +51,17 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 
+  /* toggle theme color */
+  const toggleTheme = document.querySelector('.toggle-theme');
+  if(toggleTheme) {
+    const toggleThemeInput = toggleTheme.querySelector('.toggle-theme__input');
+    toggleTheme.addEventListener('click', ()=> {
+      if(toggleThemeInput.checked){
+        bodyEl.classList.add('green-theme');
+      }
+      else{
+        bodyEl.classList.remove('green-theme');
+      }
+    });
+  }
 })

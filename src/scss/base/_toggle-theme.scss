@@ -1,12 +1,46 @@
 .toggle-theme {
+
     position: fixed;
-    top: remy(100);
+    top: remy(37);
     right: remy(40);
-    z-index: 5;
+    z-index: 10;
     display: inline-block;
-    width: remy(50);
-    height: remy(20);
+    width: remy(60);
+    height: remy(24);
     border: 1px solid $sec2;
     border-radius: remy(15);
     background-color: $sec3;
+    cursor: pointer;
+
+    &__dot {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: remy(24);
+        border-radius: 50%;
+        border: 1px solid $sec2;
+        background-color: var(--ac);
+    }
+
+    &__input {
+        width: 0.01em;
+        height: 0.01em;
+        opacity: 0;
+    }
+
+    &__input:checked + span {
+        left: auto;
+        right: 0;
+    }
+
+    @media(max-width: remy(1599)) {
+        top: remy(110);
+    }
+
+    @media(max-width: remy(767)) {
+        top: 5rem;
+        left: remy(16);
+    }
+
 }
