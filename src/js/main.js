@@ -64,4 +64,17 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   }
+
+   /* back top button */
+   const backTop = document.querySelector('.back-top');
+   if(backTop) {
+    window.addEventListener('scroll', ()=>{
+      if(window.scrollY > 500) {
+        backTop.classList.add('back-top--visible');
+      }
+      else {
+        backTop.classList.remove('back-top--visible');
+      }
+    });
+   }
 })
